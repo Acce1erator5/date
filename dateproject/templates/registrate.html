@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <style>
+        body {
+        margin: 0;
+        background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);}
+
+        .form {
+                border: 5px solid purple;
+                width: 400px;
+                height: 500px;
+                margin: 200px auto;
+                padding: 5px;
+                background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                text-align: center;
+                border-radius: 25px;}
+                input {
+	border: 2px solid grey;
+
+	width: 300px;
+	height: 30px;
+}
+
+
+.button {
+	margin-top: 20px;
+	text-align: center;
+	background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+	color:purple;
+	transition: background 0.6s;
+}
+
+
+div {
+	display: block;
+	margin-bottom: 10px;
+
+}
+    </style>
+</head>
+<body>
+  <form name="register" class="form" action="#" method="post">
+		<h1>Регистрация</h1>
+
+		<div class="name">
+			<input type="text" id="u-name" name="firstname"  placeholder=" first name">
+		</div>
+
+		<div class="surname">
+			<input type="text" name="secondname" placeholder=" second name" >
+		</div>
+
+	  	<div class="agt">
+			<input type="number" name="age" placeholder=" age" >
+		</div>
+
+	  	<div class="about yourself">
+			<input type="text" name="about yourself" placeholder=" about yourself" >
+		</div>
+
+		<div class="email">
+			<input type="email" id="email" name="email" placeholder=" email">
+		</div>
+		<div class="login">
+			<input type="text" id=login" name="pwd" placeholder=" login">
+		</div>
+		<div class="Password">
+			<input type="Password" id="pwd" name="pwd" placeholder=" Password">
+		</div>
+
+		<div class="register">
+			<input type="submit" class="button" value="register">
+
+		</div>
+  </form>
+</body>
+</html>

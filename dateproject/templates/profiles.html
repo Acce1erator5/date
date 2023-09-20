@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкеты умных и красивых</title>
+    <style>
+        body {
+        margin: 0;
+        background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);}
+        background-size: 200%;
+    </style>
+</head>
+<body>
+<div style="width: 300px;
+            margin:  auto;
+            margin-top: 100px;
+            margin-bottom:400px">
+
+    {% for profile in profiles %}
+    <div style="border: 3px solid black;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                margin-bottom: 10px;
+                text-align: center;">
+
+        <p>{{ profile }}</p>
+        <p>{{ profile.get_status_display }}</p>
+        <p>{{ profile.salary }}</p>
+        <p>
+            <a href="{{ profile.get_absolute_url }}" style="border:1px solid gray;">посмотреть профиль</a>
+        </p>
+    </div>
+    {% endfor %}
+
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета пользователя</title>
+    <style>
+        body {
+        margin: 0;
+        background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);}
+        p {
+        font-size:20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="border: 3px solid black;
+                    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                    margin-top: 100px;
+                    margin-bottom: 400px;
+                    text-align: center;">
+        <P>Name: {{ profile.name }}</P>
+        <p>Surname: {{ profile.surname }}</p>
+        <p>Age: {{ profile.age }}</p>
+        <p>Status: {{ profile.get_status_display }}</p>
+        <p>About yourself: {{ profile.about_yourself }}</p>
+        <p>Salary: {{ profile.salary }}</p>
+
+    </div>
+</body>
+</html>
